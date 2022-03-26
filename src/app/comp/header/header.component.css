@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+div.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: .5em 1.3em;
+    box-shadow: 0 -20px 50px black;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    background: #23967f;
+}
+
+div.header-container div.left-side{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+button.nav_but{
+    background-color: transparent;
+}
+
+button.nav_but,h2{
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 61px;
+    color: white;
+}
+
+@media screen and (max-width: 400px) and (orientation:portrait){
+    div.header-container div.right-side{
+        display: none;
+    }
+}

@@ -1,0 +1,105 @@
+/*-- FUENTES --*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Red+Hat+Display:wght@400;500&display=swap');
+
+main{
+    padding: 1em;
+}
+
+main > section{
+    margin-bottom: 6em;
+}
+
+/*-- first section --*/
+
+section.first{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.first > *{
+    flex-basis: 50%;
+}
+
+section.first img{
+    width: 100%;
+}
+
+section.first div.text-container h1{
+    font-family: 'Anton', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 113px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #169873;
+}
+
+section.first div.text-container p,
+section.second h2,
+section.second p{
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+section.first div.text-container p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 53px;
+    letter-spacing: 0.05em;
+
+    color: #00171F;
+}
+
+/*-- second --*/
+
+section.second{
+    max-width: 800px;
+    margin: auto;
+}
+
+section.second > *{
+    margin: 71px auto;
+    text-align: center;
+}
+
+section.second h2{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 46px;
+}
+
+section.second p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 46px;
+}
+
+section.second a{
+    font-family: 'Anton',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding: .25em .7em;
+}
+
+/*-- Media query --*/
+
+@media screen and (max-width: 700px) and (orientation: portrait){
+    section.first{
+        flex-wrap: wrap;
+    }
+
+    section.first > *{
+        flex-basis: 100%;
+    }
+}

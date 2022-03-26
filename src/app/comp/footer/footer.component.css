@@ -1,0 +1,31 @@
+div.footer-container{
+    padding: 1em;
+    color: white;
+    background-color: #23967f;
+}
+
+div.categories-container{
+    opacity: .8;
+}
+
+div.categories-container a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 1em 0;
+}
+
+div.brand-container{
+    text-align: end;
+}
+
+div.brand-container h1{
+    font-size: 2.5em;
+    margin: 0;
+}
+
+div.additional *{
+    text-align: center;
+    opacity: .6;
+    margin: 0;
+}

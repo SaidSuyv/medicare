@@ -1,0 +1,27 @@
+mat-drawer-container{
+    height: calc(100% - 143px);
+}
+
+mat-drawer{
+    background: #23967f;
+    min-width: 20%;
+}
+
+a.nav_but_tog{
+    background-color: transparent;
+    color:white;
+    width: 100%;
+    text-align: start;
+
+    padding: 1.5em;
+    margin: 1em 0;
+
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 700px) and (orientation: portrait){
+    mat-drawer{
+        width: 100%;
+    }
+}
