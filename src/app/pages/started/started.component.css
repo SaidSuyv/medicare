@@ -1,0 +1,80 @@
+main
+{
+    min-height: 100%;
+    background-color: #23967F;
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+}
+
+main div.animation div.img img
+{
+    width: 100%;
+}
+
+main div.animation div.img
+{
+    position: absolute;
+    top: calc(50% - 45px);
+    left: calc(50% - 45px);
+    width: 90px;
+    z-index: 100;
+}
+
+main div.animation div.title
+{
+    position: absolute;
+    top: calc(50% - 12px);
+    left: calc(50% - 103px);
+}
+
+main div.animation div.subtitle
+{
+    position: absolute;
+    top: calc(50% + 30px);
+    left: calc(50% + 40px);
+}
+
+main div.animation div.subtitle span,
+main div.animation div.title span
+{
+    color: white;
+}
+
+main div.animation div.title span
+{
+    font-size: 50px;
+}
+
+main div.animation div.img,
+main div.animation div.title,
+main div.animation div.subtitle
+{
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+}
+
+main div.img.start
+{
+    opacity: 1 !important;
+}
+
+main div.img.end
+{
+    left: calc(50% - 155px) !important;
+}
+
+main div.title.start
+{
+    opacity: 1 !important;
+}
+
+main div.title.end
+{
+    left: calc(50% - 51px) !important;
+}
+
+main div.subtitle.start
+{
+    opacity: 1 !important;
+}

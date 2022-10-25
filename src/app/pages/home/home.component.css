@@ -1,0 +1,209 @@
+mat-sidenav-container
+{
+    height: 100%;
+}
+
+mat-sidenav
+{
+    width: 100%;
+    box-shadow: unset !important;
+    background-color: #23967F;
+}
+
+mat-toolbar
+{
+    background-color: #23967F;
+    box-shadow: 0 0 20px black;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+mat-toolbar img
+{
+    width: 100%;
+}
+
+mat-toolbar div.img
+{
+    width: 11%;
+    display: grid;
+    place-content: center;
+    margin-right: 10px;
+}
+
+mat-toolbar span.spacer
+{
+    flex: 1 1 auto;
+}
+
+mat-toolbar h1,
+mat-toolbar span,
+mat-toolbar p
+{
+    color: white;
+}
+
+main
+{
+    padding: 30px 20px;
+}
+
+main section.spacer
+{
+    height: 150px;
+}
+
+main section.info h2
+{
+    color: #169873;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Anton', sans-serif;
+    line-height: 50px;
+    letter-spacing: 2px;
+}
+
+main section p
+{
+    color: #00171F;
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    font-size: 18px;
+}
+
+main section.ask mat-divider
+{
+    border-color: #4BAC90;
+    border-width: 2px;
+}
+
+main section.ask mat-divider:first-child
+{
+    margin-bottom: 20px;
+}
+
+main section.ask mat-divider:last-child
+{
+    margin-top: 20px;
+}
+
+main section.ask h2
+{
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 600;
+}
+
+main section button
+{
+    display: block;
+    margin: 20px auto;
+    background-color: #4BAC90;
+    color: white;
+}
+
+main section.author h2,
+main section.author h4
+{
+    font-family: 'Red Hat Display', sans-serif; 
+    text-align: center;
+}
+
+main section.author h2
+{
+    margin-bottom: 0;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+main section.author h4
+{
+    color: rgb(99, 99, 99);
+}
+
+mat-toolbar-row img
+{
+    width: 7.5%;
+    margin-right: 10px;
+}
+
+mat-toolbar-row span:not(span.spacer)
+{
+    color: white;
+    font-family: 'Red Hat Display', sans-serif; 
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    font-size: 17px;
+}
+
+@media screen and (min-width:500px)
+{
+    mat-toolbar div.img
+    {
+        max-width: 50px;
+    }
+
+    mat-toolbar-row img,
+    main ~ mat-toolbar img
+    {
+        max-width: 30px;
+    }
+}
+
+@media screen and (min-width:600px)
+{
+
+    main
+    {
+        max-width: 700px;
+        margin: 20px auto;
+    }
+
+    main section.info
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    main section.info div.text h2,
+    main section.info div.text p
+    {
+        text-align: start;
+    }
+
+    main section.info div.img
+    {
+        flex-basis: 700px;
+    }
+
+    mat-sidenav
+    {
+        width: unset;
+    }
+
+    mat-toolbar div.redes
+    {
+        display: flex;
+        gap: 25px;
+    }
+
+    mat-toolbar p
+    {
+        margin: 0;
+    }
+
+    mat-toolbar p.title
+    {
+        font-size: 27px;
+    }
+
+    mat-toolbar p.copyright
+    {
+        font-family: 'Red Hat Display', sans-serif; 
+        font-weight: 100;
+        font-size: 13px;
+        text-align: end;
+    }
+}

@@ -1,0 +1,75 @@
+<mat-sidenav-container hasBackdrop="false">
+    <mat-sidenav #nav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+        ugu
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar>
+            <span class="spacer"></span>
+            <div class="img">
+                <img src="assets/icon_medicare.png" alt="Medicare's icon">
+            </div>
+            <h1>Medicare</h1>
+            <span class="spacer"></span>
+            <!-- <button mat-icon-button (click)="nav.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button> -->
+        </mat-toolbar>
+        <main>
+            <section class="info">
+                <div class="text">
+                    <h2>TU SALUD ESTÁ SEGURA CON NOSOTROS</h2>
+                    <p>Nuestra alta taza de pacientes curados nos certifica como una entidad totalmente confiable a la salud.</p>
+                </div>
+                <div class="img">
+                    <img src="assets/doctor_info.svg" alt="Image of a doctor holding a shield.">
+                </div>
+            </section>
+            <section class="spacer"></section>
+            <section class="ask">
+                <mat-divider></mat-divider>
+                <h2>¿Necesita atención médica inmediata?</h2>
+                <p>Puede adquirirla comunicandose con uno de nuestros médicos haciendo click en el botón enlace de abajo.</p>
+                <button mat-flat-button>
+                    Consigue un médico
+                </button>
+                <mat-divider></mat-divider>
+            </section>
+            <section class="spacer"></section>
+            <section class="author">
+                <div class="img"></div>
+                <h2>Said I.R Suybate V.</h2>
+                <h4>Full Stack Developer</h4>
+                <p>Said es una de esas personas que ama aprender nuevas cosas, mejorar su habilidades y mejorar cada día. Esta aptitud lo ayudo a lo largo de muchos retos exitosos y un muy buen reconocimiento en el campo laboral.</p>
+                <button mat-flat-button>
+                    Portfolio here!
+                </button>
+            </section>
+            <section class="spacer"></section>
+        </main>
+        <mat-toolbar *ngIf="!mobileQuery.matches">
+            <span>Nuestras redes:</span>
+            <span class="spacer"></span>
+            <div class="redes">
+                <img [src]="icon.url" alt="" *ngFor="let icon of redes_data">
+            </div>
+            <span class="spacer"></span>
+            <div class="marca">
+                <p class="title">Medicare</p>
+                <p class="copyright">Copyright@2022</p>
+            </div>
+        </mat-toolbar>
+        <mat-toolbar *ngIf="mobileQuery.matches">
+            <mat-toolbar-row>
+                <span class="spacer"></span>
+                <span>Nuestras redes:</span>
+                <span class="spacer"></span>
+            </mat-toolbar-row>
+            <mat-toolbar-row *ngFor="let icon of redes_data">
+                <span class="spacer"></span>
+                <img [src]="icon.url" alt="">
+                <span>{{icon.username}}</span>
+                <span class="spacer"></span>
+            </mat-toolbar-row>
+        </mat-toolbar>
+    </mat-sidenav-content>
+</mat-sidenav-container>
